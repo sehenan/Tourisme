@@ -1,0 +1,220 @@
+
+body{
+    font-family: roboto;
+    font-size: 20px;
+    background-color: hsl(0, 0%, 99%);
+    margin: 0;
+    padding: 0;
+    
+
+}
+header{
+    width: 100%;
+    height: auto;
+}
+.uno {
+    margin-left: 5%;
+    border-bottom: 1px solid rgb(221, 213, 213);
+    padding: 10px;
+}
+.uno span{
+    color:#E85442;
+    font-size: 24px;
+    font-weight: 800;
+    margin-right: 10%;
+}
+.uno strong {
+
+    color: #31274b;
+    margin-right: 10%;
+    font-size: 20px;
+}
+.dos {
+    color: #31274b;
+    font-size: 32px;
+    margin-left: 10%;
+}
+.dos span {
+    font-weight: bold;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  bottom:   60px;
+  right: -80%;
+}
+
+.dropbtn {
+  background-color: #E85442;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.searchcontainer {
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+   /* margin-left: 40% ;
+    /*max-width: 60%;*/
+    /* width: 1000px; */
+    /* padding: 10px;  */
+    /* list-style: none;
+    color:white; */
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: -10px;
+    
+}
+
+button {
+    margin-top: 20px;
+    padding: 8px;
+    background-color: #E85442;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #E85442;
+    color: white;
+}
+/* resultats */
+#searchResults {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:5%;
+}
+
+.result {
+    margin :2%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 20% ;
+    margin:20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.result p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.result h3{
+    color: #31274b;
+}
+.result img {
+    height: 200px;
+    width: 300px;
+}
+a{
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+.reservationButton {
+    margin-left: 4px;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+} 
+
+.result {
+    border: 1px solid #ebe8e8;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.result .reservationButton {
+    color:white;
+}
+
+.result button{
+    color:white;
+}
+
+@media screen and (max-width: 768px) {
+    .uno,
+    .dos,
+    .dropdown
+    {
+        margin-left: 20%;
+    }
+    .header{
+        width: 100%;
+        height: auto;
+    }
+
+    .searchcontainer{
+        margin: 0 auto ;
+    }
+
+    #searchResults{
+        flex-direction: column;
+        margin: 0 auto ;
+        width: 60%;
+    }
+    .uno span {
+        font-size: 18px;
+        margin-right: 5%;
+    }
+
+    .uno strong {
+        font-size: 16px;
+        margin-right: 5%;
+    }
+
+    .dos {
+        font-size: 24px;
+        margin-left: 5%;
+    }
+
+    .result {
+        width: 100%;
+    }
+    .reservationButton{
+        margin-top: 200%;
+
+    margin-top: 20px;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+}
