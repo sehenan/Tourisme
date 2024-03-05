@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    background-image: url('../visite/images/swimming-pool.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.cadre1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 500px; 
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(193, 192, 192);
+}
+
+.reservation-form {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h2, h3 {
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; 
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    transition: border-color 0.3s ease-in-out; 
+}
+
+input:focus {
+    border-color: #e85442;
+    outline: none;
+    box-shadow: 0 0 5px rgba(232, 84, 66, 0.7);
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.paiement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: #fff;
+    color: black;
+    margin: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.paiement img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.paiement:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+button {
+    background-color: #e85442;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+
+}
+
+button:hover {
+    background-color: #f56767;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .cadre1 {
+        width: 100%;
+    }
+}
